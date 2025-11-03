@@ -7,7 +7,7 @@ function measureTime(fn, label) {
 }
 
 // Input size
-const n = 100000;  // চাইলে বাড়াতে পারো (যেমন 100000 বা 1000000)
+const n = 10000;  // চাইলে বাড়াতে পারো (যেমন 100000 বা 1000000)
 
 // O(1): Constant time
 function constant() {
