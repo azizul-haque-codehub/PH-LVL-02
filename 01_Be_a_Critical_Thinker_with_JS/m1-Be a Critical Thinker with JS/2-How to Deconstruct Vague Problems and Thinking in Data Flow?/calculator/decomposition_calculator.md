@@ -3,26 +3,20 @@ Example: Decomposing a Calculator App
 Goal: Make a calculator.
 
 Modules:
+1. Input handler 
 
-Input handler
+2. Evaluator
 
-Parser
+3. UI renderer
 
-Evaluator
-
-UI renderer
-
-Subtasks:
-
+Subtasks inside each module :
 Input handler → read input, sanitize it
-
-Parser → convert string to tokens
 
 Evaluator → apply math rules
 
 Renderer → show output, errors
 
-Each can be a separate file or class → easy to maintain and extend.
+- Each can be a separate file or class → easy to maintain and extend.
 
 calculator/
 │
