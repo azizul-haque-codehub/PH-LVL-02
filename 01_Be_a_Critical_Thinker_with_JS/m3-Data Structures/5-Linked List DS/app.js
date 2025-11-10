@@ -23,7 +23,17 @@ class LinkedList {
     this.length++;
     return node.value;
   }
+  prepend(value) {
+    const node = new Node(value);
+    if (!this.length) {
+      // this.append(node); // in this case don't provide node as an argument cause append also create a new node
+      return this.append(value);
+    }
 
+    node.nextLink = this.head; // think this new node is the first node , just with linked the head this new node
+    this.head = node; // the head is a variable so just we update the head variable
+    return node.value;
+  }
   insert(index, value) {}
   remove(index) {}
   print() {}
